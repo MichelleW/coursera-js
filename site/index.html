@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Coursera Test</title>
-</head>
-<body>
-	<h1>hello</h1>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Coursera Test</title>
+	</head>
+	<body>
+		<h1>woohoo</h1>
+		<script>
+		function makemultiplier(multiplier){
+			var myFunc = function(x){
+				console.log("from myfunct"+arguments);
+				return multiplier *x; 
+			}
+
+				return myFunc;
+				console.log("what's this"+ arguments);
+			 
+		}
+		
+
+
+		(function(window) {
+		var obj = {};
+		obj.dreamOn = function () {
+		 console.log("I want to see the global scope! Let me out!");
+		};
+		window.doer = obj;
+		})(window);
+
+
+
+
+//The attempted IIFE is not being invoked and passed in the window object. It's missing '(window)' Line 11 right before the semicolon.
+
+
+		</script>
+	</body>
 </html>
